@@ -1,18 +1,13 @@
 class SysMonitoring < Formula
   desc "Real-time system monitoring tool with beautiful terminal UI"
   homepage "https://github.com/vfa-khuongdv/homebrew-sys-monitoring"
-  url "https://github.com/vfa-khuongdv/homebrew-sys-monitoring/releases/download/v1.0.0/sys-monitoring-v1.0.0.tar.gz"
-  sha256 "4e65ebde706263646071f94ab9c2783dcbaf911580c0183e659347dabb5f7b0d"  # This will be replaced with actual SHA256 when you create a release
+  url "https://github.com/vfa-khuongdv/homebrew-sys-monitoring/releases/download/v1.0.0/sys-monitoring-v1.0.0-binary.tar.gz"
+  sha256 "c4b541d5a9142856e727f9ed35ab26414d3de9c5df86a9adefe3354014999f64"  # This will be replaced with actual SHA256 when you create a release
   license "MIT"
   head "https://github.com/vfa-khuongdv/homebrew-sys-monitoring.git", branch: "main"
 
-  depends_on "go" => :build
-
   def install
-    # Build the binary
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./..."
-    
-    # Install the binary
+    # Install the pre-built binary
     bin.install "sys-monitoring"
   end
 

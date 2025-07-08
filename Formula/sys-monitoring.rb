@@ -2,7 +2,7 @@ class SysMonitoring < Formula
   desc "Real-time system monitoring tool with beautiful terminal UI"
   homepage "https://github.com/vfa-khuongdv/sys-monitoring"
   url "https://github.com/vfa-khuongdv/sys-monitoring/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "PLACEHOLDER_SHA256"  # This will be replaced with actual SHA256 when you create a release
+  sha256 "4e65ebde706263646071f94ab9c2783dcbaf911580c0183e659347dabb5f7b0d"  # This will be replaced with actual SHA256 when you create a release
   license "MIT"
   head "https://github.com/vfa-khuongdv/sys-monitoring.git", branch: "main"
 
